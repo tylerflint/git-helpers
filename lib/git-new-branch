@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 
-if [ $# -lt 2 ] # number of input parameters less than 2
+if [ $# -lt 1 ] # number of input parameters less than 2
 then
   echo -ne "New branch name: "
   read name

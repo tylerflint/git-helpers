@@ -1,10 +1,10 @@
 #! /usr/bin/env bash
 
-if [ $# -lt 2 ] # number of input parameters less than 2
+if [ $# -lt 1 ] # number of input parameters less than 2
 then
   echo -ne "Commit message: "
   read message
   git commit -a -n -m "NEW: $message"
 else
-  git commit -a -n -m "NEW: $2"
+  git commit -a -n -m "NEW: $1"
 fi
