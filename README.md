@@ -1,5 +1,11 @@
-## Installation
+## Install
 
 ```bash
-./install
+sudo ./install
+```
+
+## Uninstall
+
+```bash
+sudo ./uninstall
 ```
