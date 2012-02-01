@@ -3,5 +3,5 @@
 for file in lib/git-*
 do
  echo $(basename $file)
- cp "$file" "/usr/bin"
+ cp -f -a "$file" "/usr/bin"
 done
