@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+for file in lib/git-*
+do
+ echo $(basename $file)
+ rm -f "/usr/bin/$(basename $file)"
+done
