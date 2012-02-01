@@ -1,10 +1,10 @@
-## Install
+### Install
 
 ```bash
 sudo ./install
 ```
 
-## Uninstall
+### Uninstall
 
 ```bash
 sudo ./uninstall
