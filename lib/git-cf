@@ -1,0 +1,10 @@
+#! /usr/bin/env bash
+
+if [ $# -lt 2 ] # number of input parameters less than 2
+then
+  echo -ne "Commit message: "
+  read message
+  git commit -a -n -m "FIX: $message"
+else
+  git commit -a -n -m "FIX: $2"
+fi

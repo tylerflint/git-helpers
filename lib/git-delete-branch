@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+if [ $# -lt 2 ] # number of input parameters less than 2
+then
+  echo -ne "Branch name: "
+  read name
+  git push origin :$name
+  git branch -D $name
+else
+  git push origin :$1
+  git branch -D $1
+fi

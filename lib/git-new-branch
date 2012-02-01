@@ -1,0 +1,12 @@
+#! /usr/bin/env bash
+
+if [ $# -lt 2 ] # number of input parameters less than 2
+then
+  echo -ne "New branch name: "
+  read name
+  git push origin origin:refs/heads/$name
+  git checkout --track -b $name origin/$name
+else
+  git push origin origin:refs/heads/$2
+  git checkout --track -b $2 origin/$2
+fi
